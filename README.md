@@ -9,3 +9,10 @@ En caso de no tener instalado npx. Sencillamente instalarlo con:
 npm install -g npx
 
 npm run start
+
+Para los amigos que están utilizando Visual Studio Code y desean autocompletar código JSX vayan a File - Preferences - Settings y busquen el archivo settings.json y agreguen lo siguiente:
+
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true
