@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+/*Components*/
+/*
+import JSX from './components/JSX';
+import Profile from './components/Profile';
+import Bootstrap from './components/Bootstrap';
+import Form from './components/eventos-form/Form';
+*/
+import MainProfile from './pages/MainProfile';
+import Profiles from './pages/Profiles';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+const container = document.getElementById('root');
+
+ReactDOM.render(<Profiles />, container);
+//ReactDOM.render(<Form />, container);
+
