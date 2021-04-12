@@ -1,4 +1,7 @@
 /* GLOBAL CSS */
+main {
+  padding: 30px;
+}
 .editProfile {
   display: flex;
   flex-wrap: wrap;

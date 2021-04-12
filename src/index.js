@@ -12,12 +12,11 @@ import Profile from './components/Profile';
 import Bootstrap from './components/Bootstrap';
 import Form from './components/eventos-form/Form';
 */
-import MainProfile from './pages/MainProfile';
-import Profiles from './pages/Profiles';
+import App from './components/App';
 
 
 const container = document.getElementById('root');
 
-ReactDOM.render(<Profiles />, container);
+ReactDOM.render(<App />, container);
 //ReactDOM.render(<Form />, container);
 

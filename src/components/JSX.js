@@ -6,11 +6,11 @@ class JSX extends React.Component {
         const func = () => `Mi función ${5 + 5}`;
 
         return (
-            <div>
+            <React.Fragment>
                 <h1>Element JSX</h1>
                 <p>{vari}</p>
                 <p>{func()}</p>
-            </div>
+            </React.Fragment>
         );
     }
 }

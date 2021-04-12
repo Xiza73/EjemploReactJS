@@ -1,9 +1,8 @@
-import {Component} from 'react';
+import React from 'react';
 
-import Navbar from '../components/Navbar';
 import ListCard from '../components/ListCards';
 
-class Profiles extends Component {
+class Profiles extends React.Component {
     state = {
         data: [
             {
@@ -26,12 +25,11 @@ class Profiles extends Component {
 
     render(){
         return(
-            <div>
-                <Navbar />
+            <React.Fragment>
                 <ListCard 
                     data={this.state.data}
                 />
-            </div>
+            </React.Fragment>
         );
     }
 }

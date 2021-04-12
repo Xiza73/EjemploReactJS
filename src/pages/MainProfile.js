@@ -1,7 +1,6 @@
 import React from 'react';
 
 /*Components*/
-import Navbar from '../components/Navbar';
 import Profile from '../components/Profile';
 import FormProfile from '../components/FormProfile';
 
@@ -25,10 +24,7 @@ class MainProfile extends React.Component {
 
     render() {
         return (
-            <div>
-                <nav>
-                    <Navbar />
-                </nav>
+            <React.Fragment>
                 <main>
                     <section className="editProfile">
                         <FormProfile 
@@ -42,7 +38,7 @@ class MainProfile extends React.Component {
                         />
                     </section>
                 </main>
-            </div>
+            </React.Fragment>
         );
     }
 }
