@@ -37,7 +37,7 @@ class CicloVida extends React.Component {
     componentWillUnmount(){
         console.log(`6. componentWillUnmount()`);
 
-        clearTimeout(this.timeoutId);
+        clearTimeout(this.timeoutId); //Problema al cerrar el componente
     }
 
     render(){

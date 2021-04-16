@@ -24,6 +24,7 @@ class Navbar extends Component {
                         <Link className="nav-link" to="/router">Router</Link>
                         <Link className="nav-link" to="/bootstrap">Bootstrap</Link>
                         <Link className="nav-link" to="/ciclo-vida">Ciclo Vida</Link>
+                        <Link className="nav-link" to="/poke-api">Poke Api</Link>
                         <Link className="nav-link" to="/404">404</Link>
                     </div>
                 </div>
