@@ -2,15 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 280px;
-    height: auto;
+    width: 200px;
+    height: 300px;
     margin: 10px;
     background-color: skyblue;
     border-radius: 5px;
 }
 .profile img {
-    width: 250px;
+    width: 125px;
     margin-top: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
 }
 .profile h1 {

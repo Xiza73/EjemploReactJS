@@ -8,8 +8,9 @@ class MainProfile extends React.Component {
     state = {
         form: {
             fname: '',
-            lname: 'Fajardo',
-            prof: ''
+            lname: '',
+            prof: '',
+            user: ''
         }
     };
 
@@ -35,6 +36,7 @@ class MainProfile extends React.Component {
                             firstName={this.state.form.fname}
                             lastName={this.state.form.lname}
                             profesion={this.state.form.prof}
+                            user={this.state.form.user}
                         />
                     </section>
                 </main>

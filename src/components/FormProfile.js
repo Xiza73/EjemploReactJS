@@ -38,6 +38,17 @@ class FormProfile extends React.Component {
                         value={this.props.formValues.prof}
                     />
                 </div>
+                <div className="form-group">
+                    <label htmlFor="prof">Username</label>
+                    <input 
+                        onChange={this.props.onChange}
+                        type="text" 
+                        className="form-control" 
+                        name="user"
+                        id="user"
+                        value={this.props.formValues.user}
+                    />
+                </div>
                 <button type="submit" className="btn btn-primary">Enviar</button>
             </form>
         );
