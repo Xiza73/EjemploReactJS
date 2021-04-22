@@ -44,19 +44,17 @@ class CicloVida extends React.Component {
         console.log(`2/4. render()`)
         return(
             <React.Fragment>
-                <main>
-                    {this.state.dato}
-                    <div className="form-group">
-                        <input 
-                            onChange={this.handleChange} 
-                            type="text" 
-                            className="form-control" 
-                            id="fname" 
-                            name="fname"
-                            value={this.state.fname}
-                        />
-                    </div>
-                </main>
+                {this.state.dato}
+                <div className="form-group">
+                    <input 
+                        onChange={this.handleChange} 
+                        type="text" 
+                        className="form-control" 
+                        id="fname" 
+                        name="fname"
+                        value={this.state.fname}
+                    />
+                </div>
             </React.Fragment>
         );
     }

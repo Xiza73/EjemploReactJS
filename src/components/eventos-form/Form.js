@@ -19,6 +19,8 @@ class Form extends React.Component {
     
     handleClick = (e) => {
         console.log(`button was clicked`);
+
+        this.props.history.push('/');
     }
 
     handleSubmit = (e) => {

@@ -7,8 +7,15 @@ function Layout(props){
     //const children = props.children;
     return (
         <React.Fragment>
-            <Navbar/>
-            {props.children}
+            <nav>
+                <Navbar/>
+            </nav>
+            <main>
+                {props.children}
+            </main>
+            <footer>
+                
+            </footer>
         </React.Fragment>
     );
 }

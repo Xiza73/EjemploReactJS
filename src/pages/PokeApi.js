@@ -26,59 +26,57 @@ class PokeApi extends React.Component {
     render(){
         if(this.state.error){
             return (
-                <main>
+                <div>
                     {`Error ${this.state.error.message}`}
-                </main>
+                </div>
             )
         }
         return(
             <React.Fragment>
-                <main>
-                    <div className="form-group">
-                        <input 
-                            onChange={this.handleChange} 
-                            onKeyDown={this.lookPoke}
-                            type="text" 
-                            className="form-control" 
-                            id="pokeName" 
-                            name="pokeName"
-                            value={this.state.pokeName}
-                        />
-                    </div>
-                    {
-                        this.state.validPokeName && (
-                            <div>
-                                <CardPokeName 
-                                    pokeName={this.state.pokeName}>
-                                </CardPokeName>
+                <div className="form-group">
+                    <input 
+                        onChange={this.handleChange} 
+                        onKeyDown={this.lookPoke}
+                        type="text" 
+                        className="form-control" 
+                        id="pokeName" 
+                        name="pokeName"
+                        value={this.state.pokeName}
+                    />
+                </div>
+                {
+                    this.state.validPokeName && (
+                        <div>
+                            <CardPokeName 
+                                pokeName={this.state.pokeName}>
+                            </CardPokeName>
+                        </div>
+                    )
+                }
+                {
+                    !this.state.validPokeName && (
+                        <div>
+                            <div className="pokecard--container">
+                                {this.state.data.results.map(poke => (
+                                    <CardPoke key={poke.name} poke={poke}></CardPoke>
+                                ))}
                             </div>
-                        )
-                    }
-                    {
-                        !this.state.validPokeName && (
-                            <div>
-                                <div className="pokecard--container">
-                                    {this.state.data.results.map(poke => (
-                                        <CardPoke key={poke.name} poke={poke}></CardPoke>
-                                    ))}
-                                </div>
-                                {
-                                    /*IF LOADING*/
-                                    this.state.loading && (
-                                        <div className="loading">
-                                            <img src="https://media.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif" alt=""/>
-                                        </div>
-                                    )
-                                }
-                                {
-                                    !this.state.loading && (
-                                        <button onClick={() => this.fetchCharacters()} className="button">Load More...</button>
-                                    )
-                                }
-                            </div>
-                        )
-                    }
-                </main>
+                            {
+                                /*IF LOADING*/
+                                this.state.loading && (
+                                    <div className="loading">
+                                        <img src="https://media.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif" alt=""/>
+                                    </div>
+                                )
+                            }
+                            {
+                                !this.state.loading && (
+                                    <button onClick={() => this.fetchCharacters()} className="button">Load More...</button>
+                                )
+                            }
+                        </div>
+                    )
+                }
             </React.Fragment>
         );
     }

@@ -26,20 +26,18 @@ class MainProfile extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <main>
-                    <section className="editProfile">
-                        <FormProfile 
-                            onChange={this.handleChange} 
-                            formValues={this.state.form}
-                        />
-                        <Profile 
-                            firstName={this.state.form.fname}
-                            lastName={this.state.form.lname}
-                            profesion={this.state.form.prof}
-                            user={this.state.form.user}
-                        />
-                    </section>
-                </main>
+                <section className="editProfile">
+                    <FormProfile 
+                        onChange={this.handleChange} 
+                        formValues={this.state.form}
+                    />
+                    <Profile 
+                        firstName={this.state.form.fname}
+                        lastName={this.state.form.lname}
+                        profesion={this.state.form.prof}
+                        user={this.state.form.user}
+                    />
+                </section>
             </React.Fragment>
         );
     }

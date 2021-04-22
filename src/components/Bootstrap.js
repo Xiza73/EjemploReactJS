@@ -1,5 +1,7 @@
 import React from 'react';
+
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap';
 
 import mayLogo from '../images/30b.jpg';
 
