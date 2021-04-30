@@ -12,6 +12,7 @@ import Form from './eventos-form/Form';
 import Bootstrap from './Bootstrap';
 import CicloVida from '../pages/CicloVida';
 import PokeApi from '../pages/PokeApi';
+import StylesContainer from '../pages/StylesContainer';
 
 function App(){
     return (
@@ -29,6 +30,7 @@ function App(){
                     <Route exact path="/bootstrap" component={Bootstrap} />
                     <Route exact path="/ciclo-vida" component={CicloVida} />
                     <Route exact path="/poke-api" component={PokeApi} />
+                    <Route exact path="/styles" component={StylesContainer} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>
