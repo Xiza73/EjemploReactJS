@@ -24,15 +24,6 @@ function Profiles(props){
     } 
 
     const [query, setQuery] = React.useState('');
-    /*const [filtered, setFiltered] = React.useState(state.data);
-
-    React.useMemo(() => {
-        const result = state.data.filter(person => {
-            return `${person.fname} ${person.lname}`.includes(capitalize(query));
-        })
-
-        setFiltered(result);
-    }, [state.data, query]);*/
 
     const filtered = state.data.filter(person => {
         //return person.fname.includes(capitalize(query));  

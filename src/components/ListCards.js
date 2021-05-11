@@ -1,9 +1,10 @@
-import {Component} from 'react'
+import {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import CardProfile from './CardProfile';
 import './styles/listCards.css';
 
-class ListCard extends Component {
+class ListCards extends Component {
     render(){
         return (
             <div className="list">
@@ -12,6 +13,7 @@ class ListCard extends Component {
                         return (
                             <CardProfile 
                                 key={card.id}
+                                id={card.id}
                                 fname={card.fname}
                                 lname={card.lname}
                             />
@@ -23,4 +25,8 @@ class ListCard extends Component {
     }
 }
 
-export default ListCard;
+ListCards.propTypes = {
+    data: PropTypes.array.isRequired
+}
+
+export default ListCards;

@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import './styles/cardProfile.css';
 
@@ -10,6 +11,12 @@ class CardProfile extends Component {
             </div>
         );
     }
+}
+
+CardProfile.propTypes = {
+    id: PropTypes.string.isRequired,
+    fname: PropTypes.string.isRequired,
+    lname: PropTypes.string.isRequired
 }
 
 export default CardProfile;

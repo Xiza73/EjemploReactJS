@@ -14,7 +14,7 @@ function useIncreaseCount(max){
 function FormProfile(props){
         const [users, setUser] = React.useState(0);
         const [count, setCount] = useIncreaseCount(4);
-
+        /*is not a function: function.bind(this, parameter) <=> function(parameter) */
         return (
             <form>
                 <div className="form-group">
